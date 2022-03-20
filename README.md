@@ -31,3 +31,33 @@ qb-drawtext: https://github.com/IdrisDose/qb-drawtext
 	['meatcrow'] 			 = {['name'] = 'meatcrow', 				['label'] = 'Crow Meat', 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'meat.png', 		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
 
 ```
+
+# Add to qb-target/init.lua
+
+```
+	["mt-hunting"] = {
+        models = {
+            "cs_hunter",
+        },
+        options = {
+            {
+                type = "client",
+                event = "mt-hunting:client:LojaCaca",
+                icon = "fas fa-circle",
+                label = "Talk to employee",
+            },
+        },
+        distance = 2.5,
+    },
+```
+
+```
+{ --mt-hunting
+	model = 'cs_hunter',
+	coords = vector4(-776.04, 5602.91, 32.74, 270.54),
+	gender = 'male',
+	freeze = true,
+	invincible = false,
+	blockevents = false,
+},
+```
