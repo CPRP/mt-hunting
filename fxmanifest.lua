@@ -13,6 +13,7 @@ shared_scripts {
 }
 
 client_scripts{
+    'cl_aimblock',
     'client.lua',
 }
 
