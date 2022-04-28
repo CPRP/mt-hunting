@@ -200,7 +200,9 @@ RegisterNetEvent('mt-hunting:server:Vender', function()
             if Player.PlayerData.items[k] ~= nil then
                 if ItemList[Player.PlayerData.items[k].name] ~= nil then
                     price = price + (ItemList[Player.PlayerData.items[k].name] * Player.PlayerData.items[k].amount)
-                    Player.Functions.RemoveItem(Player.PlayerData.items[k].name, Player.PlayerData.items[k].amount, k)
+
+
+Player.Functions.RemoveItem("weapon_sniperrifle", 1)               Player.Functions.RemoveItem(Player.PlayerData.items[k].name, Player.PlayerData.items[k].amount, k)
 
         Player.Functions.AddMoney("cash", price, "sold-meat")
             TriggerClientEvent('QBCore:Notify', src, "You sell some meat for $"..price)
