@@ -132,7 +132,7 @@ Citizen.CreateThread(function()
                     if (DoesEntityExist(v.entity)) then
                         if (IsEntityDead(v.entity)) then
                             if (GetDistanceBetweenCoords(pos, rpos.x, rpos.y, rpos.z, true) < 1.1) then
-                                exports['qb-drawtext']:DrawText('[E] HUNT ANIMAL','left')
+                                exports['qb-core']:DrawText('[E] HUNT ANIMAL','left')
                                 if IsControlJustPressed(0, 38) and
                                     GetSelectedPedWeapon(ped) ==
                                     GetHashKey("WEAPON_KNIFE") then
@@ -152,7 +152,7 @@ Citizen.CreateThread(function()
                                     Citizen.Wait(1500)
                                     removeEntity(v.entity)
                                     DeleteEntity(v.entity)
-                                    exports['qb-drawtext']:HideText()
+                                    exports['qb-core']:HideText()
                                     end)
                                 end
                             end
