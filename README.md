@@ -8,10 +8,9 @@ https://discord.gg/AQHbsahZsV
 https://www.youtube.com/watch?v=-lqOiLwaBqQ
 
 # Dependicies
-qb-core: https://github.com/qbcore-framework/qb-core
-qb-target: https://github.com/BerkieBb/qb-target
-qb-menu: https://github.com/qbcore-framework/qb-menu
-qb-drawtext: https://github.com/IdrisDose/qb-drawtext
+- qb-core: https://github.com/qbcore-framework/qb-core
+- qb-target: https://github.com/BerkieBb/qb-target
+- qb-menu: https://github.com/qbcore-framework/qb-menu
 
 # Add to qb-core/shared/items.lua
 
