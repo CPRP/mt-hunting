@@ -213,21 +213,21 @@ AddEventHandler('mt-hunting:client:MenuLoja', function()
         },
         {
             header = "Buy sniper rifle",
-            txt = "Price: 1000$",
+            txt = "Price: $40,000",
             params = {
                 event = "mt-hunting:client:ComprarSniper",
             }
         },
         {
             header = "Buy sniper ammo",
-            txt = "Price: 10$",
+            txt = "Price: $250",
             params = {
                 event = "mt-hunting:client:ComprarBalas",
             }
         },
         {
             header = "Buy knife",
-            txt = "Price: 500$",
+            txt = "Price: $2000",
             params = {
                 event = "mt-hunting:client:ComprarFaca",
             }
