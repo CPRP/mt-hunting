@@ -130,7 +130,7 @@ AddEventHandler('mt-hunting:server:ComprarSniper', function(data)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local quantity = 1
-    local price = 1000
+    local price = 40000
 
     if Player.Functions.RemoveMoney('bank', price) then
         Player.Functions.AddItem('weapon_sniperrifle', quantity)
@@ -145,7 +145,7 @@ AddEventHandler('mt-hunting:server:ComprarBalas', function(data)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local quantity = 1
-    local price = 10
+    local price = 250
 
     if Player.Functions.RemoveMoney('bank', price) then
         Player.Functions.AddItem('snp_ammo', quantity)
@@ -160,7 +160,7 @@ AddEventHandler('mt-hunting:server:ComprarFaca', function(data)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local quantity = 1
-    local price = 500
+    local price = 2000
 
     if Player.Functions.RemoveMoney('bank', price) then
         Player.Functions.AddItem('weapon_knife', quantity)
